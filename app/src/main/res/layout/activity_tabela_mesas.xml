@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vagapararestaurante.unibta.restaurantedochef.TabelaMesasActivity">
+
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="402dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="100dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordas_escura"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <Button
+                android:id="@+id/mesa1Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 1"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/mesa2Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 2"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/mesa3Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 3"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/mesa4Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 4"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/mesa5Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 5"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/mesa6Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 6"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/mesa7Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 7"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/mesa8Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 8"
+                android:textColor="@android:color/holo_red_dark"
+                android:textColorHighlight="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/mesa9Id"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mesa 9"
+                android:textColor="@android:color/holo_green_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Vermelho: mesa ocupada"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="568dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Verde: Mesa Disponivel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha sua mesa:"
+        android:textSize="@dimen/fonte_titulo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+</android.support.constraint.ConstraintLayout>
