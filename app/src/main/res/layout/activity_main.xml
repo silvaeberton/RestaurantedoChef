@@ -6,65 +6,112 @@
     android:layout_height="match_parent"
     tools:context="com.vagapararestaurante.unibta.restaurantedochef.MainActivity">
 
-    <TextView
-        android:id="@+id/DivisorId"
-        android:layout_width="347dp"
-        android:layout_height="2dp"
-        android:background="@android:color/darker_gray"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="224dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/logoId"
-        android:layout_width="300sp"
-        android:layout_height="200sp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <ImageView
+            android:id="@+id/logoId"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-    <EditText
-        android:id="@+id/campoSenhaId"
-        android:layout_width="325dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="399dp" />
+        <TextView
+            android:id="@+id/divisorId"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/darker_gray"
+            android:paddingHorizontal="100dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="224dp" />
 
-    <TextView
-        android:id="@+id/nomeId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome do Usuário:"
-        android:textSize="@dimen/fonte_titulo"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="251dp" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/senhaId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha:"
-        android:textSize="@dimen/fonte_titulo"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="359dp" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/campoNomeId"
-        android:layout_width="325dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="295dp" />
+                <TextView
+                    android:id="@+id/nomeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Nome do Usuário:"
+                    android:textSize="@dimen/fonte_titulo"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="251dp" />
 
-    <Button
-        android:id="@+id/logarId"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
-        android:text="Logar"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="475dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/campoNomeId"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="295dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/senhaId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Senha:"
+                    android:textSize="@dimen/fonte_titulo"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="359dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/campoSenhaId"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="399dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/logarId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Logar"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="475dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
